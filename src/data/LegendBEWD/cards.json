@@ -1,13 +1,761 @@
 {
   "pack": "Legend of Blue Eyes White Dragon",
   "cards": [
-    { "id": 89631139, "name": "Blue-Eyes White Dragon", "rating": 10, "reviewFile": "BEWD.txt" },
-    { "id": 83764718, "name": "Monster Reborn", "rating": 8, "reviewFile": "MonsterReborn.txt" },
-    { "id": 39111158, "name": "Tri-Horned Dragon", "rating": 5, 
-    "reviewText": "Not bad I guess, but it's just an objectively worse Blue-Eyes by 150 ATK/DEF each. Also looks ugly as hell." },
-    { "id": 76184692, "name": "Hitotsu-Me Giant", "rating": 3, 
-    "reviewText": "This card is special to me- I got him in a McDonald's toy when I was like 8. But, alas, still dogwater, even for the time. " },
-    { "id": 45231177, "name": "Flame Swordsman", "rating": 4, "reviewText": "One of the classic 'wtf is this' fusions of early yugioh. Cool art tho" }
+    {
+      "name": "Aqua Madoor",
+      "rating": 6,
+      "reviewText": "Kinda hard. Great DEF for a no tribute monster and had at least some purpose as a wall. The mask is hard too",
+      "id": 85639257
+    },
+    {
+      "id": 53153481,
+      "name": "Armaill",
+      "rating": 1,
+      "reviewText": "Reminds me of an early stage monster in RPGs u spam kill for EXP."
+    },
+    {
+      "id": 9076207,
+      "name": "Armed Ninja",
+      "rating": 0,
+      "reviewText": "Not bad for its time I guess (considering the alternatives) but who sets spell cards? This is cool because this is like a pioneer of Yugioh's ninja archetype tho"
+    },
+    {
+      "id": 17535588,
+      "name": "Armored Starfish",
+      "rating": 0,
+      "reviewText": "ShrekLookingUp.gif"
+    },
+    {
+      "name": "Basic Insect",
+      "rating": 1,
+      "reviewText": "The literal embodiment of pack filler. It's even in the name.",
+      "id": 89091579
+    },
+    {
+      "id": 46009906,
+      "name": "Beast Fangs",
+      "rating": 1,
+      "reviewText": "Yep there were a wholeeee bunch of these early equip spells with 300 ATK/DEF boosts for a specific type."
+    },
+    {
+      "id": 32452818,
+      "name": "Beaver Warrior",
+      "rating": 3,
+      "reviewText": "I genuinely think Konami was trolling with some of these card ideas. Mid stats I guess."
+    },
+    {
+      "id": 89631139,
+      "name": "Blue-Eyes White Dragon",
+      "rating": 10,
+      "reviewFile": "BEWD.txt"
+    },
+    {
+      "id": 91595718,
+      "name": "Book of Secret Arts",
+      "rating": 2,
+      "reviewText": "Another of the 300 ATK/DEF equip spells."
+    },
+    {
+      "name": "Celtic Guardian",
+      "rating": 5,
+      "reviewText": "One of Yugi's classic cards, and iconic artwork that I see cosplayed everywhere still. But still, mid stats.",
+      "id": 91152256
+    },
+    {
+      "name": "Charubin the Fire Knight",
+      "rating": 1,
+      "reviewText": "One of the trash early Yugioh fusions lol. Deserves a 0",
+      "id": 37421579
+    },
+    {
+      "id": 28279543,
+      "name": "Curse of Dragon",
+      "rating": 5,
+      "reviewText": "Another of Yugi's iconic monsters that fuse for Gaia the Dragon Champion. Even though it's trash on its own."
+    },
+    {
+      "id": 4614116,
+      "name": "Dark Energy",
+      "rating": 0,
+      "reviewText": "Drink water today guys"
+    },
+    {
+      "name": "Dark Gray",
+      "rating": 1,
+      "reviewText": "A generic goat with tiny wings (what even is the purpose?). Get ready to see a lot more of these.",
+      "id": 9159938
+    },
+    {
+      "id": 53129443,
+      "name": "Dark Hole",
+      "rating": 10,
+      "reviewText": "Yessir. Now we are talking. This was a universal staple and broke the game in the early years. It's hovered between the banned and limited list for years and years, and for good reason."
+    },
+    {
+      "id": 53375573,
+      "name": "Dark King of the Abyss",
+      "rating": 0,
+      "reviewText": "King of the Netherworld that paints his nails lol. Not that there's anything wrong with that. Shoutout Caleb Williams the BUST. I'm so mad at week 1 man. "
+    },
+    {
+      "id": 36996508,
+      "name": "Dark Magician",
+      "rating": 10,
+      "reviewFile": "DMagician.txt"
+    },
+    {
+      "name": "Darkfire Dragon",
+      "rating": 1,
+      "reviewText": "Make sure you get good sleep too. I got like 3 hours last night and my head's ringing.",
+      "id": 17881964
+    },
+    {
+      "id": 43500484,
+      "name": "Darkworld Thorns",
+      "rating": 1,
+      "reviewText": "Is it eating something or being freaky with the tongue?"
+    },
+    {
+      "id": 40826495,
+      "name": "Dissolverock",
+      "rating": 1,
+      "reviewText": "Jabba the Hutt?"
+    },
+    {
+      "id": 50045299,
+      "name": "Dragon Capture Jar",
+      "rating": 5,
+      "reviewText": "One of the earliest 'floodgates' in Yugioh. When BEWD was considered a tier 0 card, this provided a sort of a counter."
+    },
+    {
+      "id": 1435851,
+      "name": "Dragon Treasure",
+      "rating": 1,
+      "reviewText": "I always thought that treaasure on the dragon looked like the dirty bubble from Spongebob lol"
+    },
+    {
+      "id": 70681994,
+      "name": "Dragoness the Wicked Knight",
+      "rating": 1,
+      "reviewText": "How do those fusion materials fuse to make this woman"
+    },
+    {
+      "id": 16353197,
+      "name": "Drooling Lizard",
+      "rating": 1,
+      "reviewText": "Ew"
+    },
+    {
+      "id": 37820550,
+      "name": "Electro-Whip",
+      "rating": 1,
+      "reviewText": "Follow the Drinking Gourd"
+    },
+    {
+      "id": 75376965,
+      "name": "Enchanting Mermaid",
+      "rating": 3,
+      "reviewText": "She kinda bad but she sucks"
+    },
+    {
+      "id": 33396948,
+      "name": "Exodia the Forbidden One",
+      "rating": 10,
+      "reviewText": "Yessir. Now we're back to iconicness. Gave rise to terribly annoying stall decks while the 5 pieces were collected."
+    },
+    {
+      "name": "Fiend Reflection #2",
+      "rating": 1,
+      "reviewText": "Bro I got such a dirty mind lol",
+      "id": 2863439
+    },
+    {
+      "id": 73134081,
+      "name": "Final Flame",
+      "rating": 3,
+      "reviewText": "Goddamn boi. Straight cruxificion and burning at the stake??? No CHANCE this flies today."
+    },
+    {
+      "name": "Firegrass",
+      "rating": 1,
+      "reviewText": "I wonder if PvZ got the peashooter design from here. Surely right?",
+      "id": 53293545
+    },
+    {
+      "id": 71407486,
+      "name": "Fireyarou",
+      "rating": 2,
+      "reviewText": "Generic One Piece character"
+    },
+    {
+      "id": 66788016,
+      "name": "Fissure",
+      "rating": 7.5,
+      "reviewText": "Destroying an opponent's monster is always solid, especially during this time period."
+    },
+    {
+      "id": 58528964,
+      "name": "Flame Ghost",
+      "rating": 0,
+      "reviewText": "Ugh. I got a headache."
+    },
+    {
+      "name": "Flame Manipulator",
+      "rating": 1,
+      "reviewText": "How's y'all day going? Drink some water.",
+      "id": 34460851
+    },
+    {
+      "id": 45231177,
+      "name": "Flame Swordsman",
+      "rating": 4,
+      "reviewText": "One of the classic Joey Wheeler fusions when he sucked. It's also one of the many 'not worth it' fusions of early yugioh."
+    },
+    {
+      "id": 95952802,
+      "name": "Flower Wolf",
+      "rating": 2,
+      "reviewText": "Ok this one's funny"
+    },
+    {
+      "id": 98252586,
+      "name": "Follow Wind",
+      "rating": 1,
+      "reviewText": "What if I don't?"
+    },
+    {
+      "id": 87430998,
+      "name": "Forest",
+      "rating": 1,
+      "reviewText": "Looks like a forest."
+    },
+    {
+      "id": 98818516,
+      "name": "Frenzied Panda",
+      "rating": 2,
+      "reviewText": "Now that I think of it, I've never seen an angry panda. They're always just goofing around and falling from trees."
+    },
+    {
+      "name": "Fusionist",
+      "rating": 2.5,
+      "reviewText": "Probably the worst fusion monster in the game's history. When Elder Entity Norden was unbanned though, this was the common choice for Instant Fusion, so it does have significance.",
+      "id": 1641882
+    },
+    {
+      "id": 66889139,
+      "name": "Gaia the Dragon Champion",
+      "rating": 5,
+      "reviewText": "A knight on a dragon. Classic Arthurian stuff. Yugi fused this guy in the anime. Decent ATK. That's about it."
+    },
+    {
+      "name": "Gaia the Fierce Knight",
+      "rating": 4,
+      "reviewFile": "GaiaFierceKnight.txt",
+      "id": 6368038
+    },
+    {
+      "id": 13039848,
+      "name": "Giant Soldier of Stone",
+      "rating": 7,
+      "reviewText": "Pretty solid wall card with 2000 DEF. Yugi also used him to destroy the moon. Idk man early Yugioh was just full of random shit lol"
+    },
+    {
+      "id": 11868825,
+      "name": "Goblin's Secret Remedy",
+      "rating": 1,
+      "reviewText": "Herbs and pills. Wow."
+    },
+    {
+      "id": 82542267,
+      "name": "Gravedigger Ghoul",
+      "rating": 5,
+      "reviewText": "Pretty solid actually. Banishing (removing from play) was not handled AT ALL in early Yugioh so this effectively removed monsters from the game."
+    },
+    {
+      "id": 22910685,
+      "name": "Green Phantom King",
+      "rating": 1,
+      "reviewText": "This guy looks like someone. I can't figure out who though."
+    },
+    {
+      "id": 7089711,
+      "name": "Hane-Hane",
+      "rating": 1,
+      "reviewText": "Not bad"
+    },
+    {
+      "id": 20060230,
+      "name": "Hard Armor",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 46130346,
+      "name": "Hinotama",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "Hinotama Soul",
+      "rating": 1,
+      "reviewText": "I wonder if PvZ got the peashooter design from here. Surely right?",
+      "id": 96851799
+    },
+    {
+      "id": 76184692,
+      "name": "Hitotsu-Me Giant",
+      "rating": 3,
+      "reviewText": "This card is special to me- I got him in a McDonald's toy when I was like 8. But, alas, still dogwater, even for the time. "
+    },
+    {
+      "id": 15401633,
+      "name": "Kagemusha of the Blue Flame",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 54541900,
+      "name": "Karbonala Warrior",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 84686841,
+      "name": "King Fog",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 56283725,
+      "name": "Kumootoko",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 85705804,
+      "name": "Kurama",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 94675535,
+      "name": "Larvas",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 77007920,
+      "name": "Laser Cannon Armor",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 7902349,
+      "name": "Left Arm of the Forbidden One",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 44519536,
+      "name": "Left Leg of the Forbidden One",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 61854111,
+      "name": "Legendary Sword",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 55444629,
+      "name": "Lesser Dragon",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 56342351,
+      "name": "M-Warrior #1",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 92731455,
+      "name": "M-Warrior #2",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 25769732,
+      "name": "Machine Conversion Factory",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "Mammoth Graveyard",
+      "rating": 2.5,
+      "reviewText": "I think Kaiba fused this with Blue Eyes Ultimate Dragon in the anime which was kinda cool. If not for that this gets a 1.",
+      "id": 40374923
+    },
+    {
+      "id": 93553943,
+      "name": "Man Eater",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 54652250,
+      "name": "Man-Eater Bug",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 44287299,
+      "name": "Masaki the Legendary Swordsman",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 76211194,
+      "name": "Meda Bat",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 9293977,
+      "name": "Metal Dragon",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 33178416,
+      "name": "Misairuzame",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "Monster Egg",
+      "rating": 1,
+      "reviewText": "Flinging eggshells LMAO",
+      "id": 36121917
+    },
+    {
+      "id": 83764718,
+      "name": "Monster Reborn",
+      "rating": 8,
+      "reviewFile": "MonsterReborn.txt"
+    },
+    {
+      "id": 50913601,
+      "name": "Mountain",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 15025844,
+      "name": "Mystical Elf",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 36607978,
+      "name": "Mystical Moon",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 83464209,
+      "name": "Mystical Sheep #2",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "Nemuriko",
+      "rating": 1,
+      "reviewText": "Nemuriko means sleeping child in Japanese. That's becoming me giving reviews for these pathetic cards.",
+      "id": 90963488
+    },
+    {
+      "id": 33064647,
+      "name": "One-Eyed Shield Dragon",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "Petit Angel",
+      "rating": 1,
+      "reviewText": "Flinging eggshells LMAO",
+      "id": 38142739
+    },
+    {
+      "name": "Petit Dragon",
+      "rating": 1,
+      "reviewText": "ZZZZ.",
+      "id": 75356564
+    },
+    {
+      "id": 24094653,
+      "name": "Polymerization",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 55144522,
+      "name": "Pot of Greed",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 77027445,
+      "name": "Power of Kaishin",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 12580477,
+      "name": "Raigeki",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 51267887,
+      "name": "Raise Body Heat",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 85309439,
+      "name": "Ray & Temperature",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 33066139,
+      "name": "Reaper of the Cards",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 38199696,
+      "name": "Red Medicine",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 74677422,
+      "name": "Red-Eyes Black Dragon",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 51482758,
+      "name": "Remove Trap",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 70903634,
+      "name": "Right Arm of the Forbidden One",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 8124921,
+      "name": "Right Leg of the Forbidden One",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 39004808,
+      "name": "Root Water",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 73051941,
+      "name": "Sand Stone",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 1557499,
+      "name": "Silver Bow and Arrow",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "Silver Fang",
+      "rating": 1,
+      "reviewText": "A generic wolf. More pack filler.",
+      "id": 90357090
+    },
+    {
+      "id": 10202894,
+      "name": "Skull Red Bird",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 32274490,
+      "name": "Skull Servant",
+      "rating": 8,
+      "reviewFile": "SkullServant.txt"
+    },
+    {
+      "id": 86318356,
+      "name": "Sogen",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 76103675,
+      "name": "Sparks",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 85326399,
+      "name": "Spike Seadra",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 80770678,
+      "name": "Spirit of the Harp",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 29172562,
+      "name": "Steel Ogre Grotto #1",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 63102017,
+      "name": "Stop Defense",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 55291359,
+      "name": "Succubus Knight",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 72302403,
+      "name": "Swords of Revealing Light",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 63308047,
+      "name": "Terra the Terrible",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "The 13th Grave",
+      "rating": 1.5,
+      "reviewText": "More filler.",
+      "id": 32864
+    },
+    {
+      "id": 18710707,
+      "name": "The Furious Sea King",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 4206964,
+      "name": "Trap Hole",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 39111158,
+      "name": "Tri-Horned Dragon",
+      "rating": 5,
+      "reviewText": "Not bad I guess, but it's just an objectively worse Blue-Eyes by 150 ATK/DEF each. Also looks ugly as hell."
+    },
+    {
+      "name": "Trial of Nightmare",
+      "rating": 2.5,
+      "reviewText": "Damn. Kind of metal. Early Yugioh went crazy with the occult horror stuff, which I love. But other than that it's got mid stats.",
+      "id": 77827521
+    },
+    {
+      "id": 45042329,
+      "name": "Tripwire Beast",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "name": "Turtle Tiger",
+      "rating": 1,
+      "reviewText": "Ok what is this lol. Now they're just making shit up.",
+      "id": 37313348
+    },
+    {
+      "id": 57305373,
+      "name": "Two-Mouth Darkruler",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 83887306,
+      "name": "Two-Pronged Attack",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 72842870,
+      "name": "Tyhone",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 22702055,
+      "name": "Umi",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 1784619,
+      "name": "Uraby",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 39774685,
+      "name": "Vile Germs",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 15052462,
+      "name": "Violet Crystal",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 23424603,
+      "name": "Wasteland",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 36304921,
+      "name": "Witty Phantom",
+      "rating": 0,
+      "reviewText": ""
+    },
+    {
+      "id": 59197169,
+      "name": "Yami",
+      "rating": 0,
+      "reviewText": ""
+    }
   ]
 }
-
