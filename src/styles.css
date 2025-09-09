@@ -1,0 +1,15 @@
+/* Minimal custom styles; Bootstrap handles layout/typography */
+html, body, #root { height: 100%; }
+.ygo-card img { box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+/* Scale image with viewport height so the whole layout fits without page scroll */
+.ygo-card-img { height: min(60vh, 520px); width: auto; }
+@media (max-width: 576px) { .ygo-card-img { height: 45vh; } }
+
+/* Clamp long descriptions to keep the card within the viewport */
+.desc-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* adjust lines as needed */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.text-break { overflow-wrap: anywhere; }

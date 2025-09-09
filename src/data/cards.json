@@ -1,0 +1,37 @@
+[
+  {
+    "id": 89631139,
+    "name": "Blue-Eyes White Dragon",
+    "rating": 10,
+    "reviewFile": "BEWD.txt",
+    "pack": "Legend of Blue Eyes White Dragon"
+  },
+  {
+    "id": 46986414,
+    "name": "Dark Magician",
+    "rating": 7,
+    "reviewFile": "DMagician.txt",
+    "pack": "Starter Deck: Yugi"
+  },
+  {
+    "id": 44095762,
+    "name": "Mirror Force",
+    "rating": 6,
+    "reviewFile": "MirrorForce.txt",
+    "pack": "Metal Raiders"
+  },
+  {
+    "id": 83764718,
+    "name": "Monster Reborn",
+    "rating": 8,
+    "reviewFile": "MonsterReborn.txt",
+    "pack": "Legend of Blue Eyes White Dragon"
+  },
+  {
+    "id": 74677422,
+    "name": "Red-Eyes Black Dragon",
+    "rating": 6,
+    "reviewFile": "REBD.txt",
+    "pack": "Starter Deck: Joey"
+  }
+]
