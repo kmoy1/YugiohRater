@@ -1,33 +1,23 @@
 Yu-Gi-Oh! Rater
 ================
 
-A minimal React app that displays Yu-Gi-Oh! cards with your pre-written rating and review, while fetching live card details (image, effect, stats, etc.) from the YGOPRODeck API. Built with modern React + TypeScript and styled with Bootstrap 5 for consistent typography and layout.
-
-Features
---------
-- Store only `id`, `name`, `rating`, `review` locally in `src/data/cards.json`.
-- Packs are now organized as folders under `src/data/**/cards.json`, and the UI auto-loads them.
- - Multi-line reviews via external text files per card (no escaping needed).
-- Fetch card metadata and images on the client from YGOPRODeck.
-- Clean, responsive layout with loading and error states.
- - Bootstrap 5 grid and card components.
- - Per-card deep links: open any card at `/card/:id` with optional `?pack=...` to scope navigation.
+A React app that displays Yu-Gi-Oh! cards with each card rated and reviewed, while fetching live card details (image, effect, stats, etc.) from the YGOPRODeck API. Built with React + TypeScript and styled with Bootstrap 5.
 
 Getting Started
 ---------------
 Prerequisites: Node.js 18+ recommended.
 
 1) Install dependencies:
-   npm install
+   `npm install`
 
 2) Run the dev server:
-   npm run dev
+   `npm run dev`
 
 3) Build for production:
-   npm run build
+   `npm run build`
 
 4) Preview the production build:
-   npm run preview
+   `npm run preview`
 
 Editing Your Card List
 ----------------------
