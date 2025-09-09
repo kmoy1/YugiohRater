@@ -1,7 +1,7 @@
 {
   "pack": "Starter Deck: Yugi",
   "cards": [
-    { "id": 46986414, "name": "Dark Magician", "rating": 7, "reviewFile": "DMagician.txt" }
+    { "id": 46986414, "name": "Dark Magician", "rating": 9.5, "reviewFile": "DMagician.txt" }
   ]
 }
 

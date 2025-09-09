@@ -1,8 +1,13 @@
 {
   "pack": "Legend of Blue Eyes White Dragon",
   "cards": [
-    { "id": 89631139, "name": "Blue-Eyes White Dragon", "rating": 10, "reviewFile": "89631139.txt" },
-    { "id": 83764718, "name": "Monster Reborn", "rating": 8, "reviewFile": "83764718.txt" }
+    { "id": 89631139, "name": "Blue-Eyes White Dragon", "rating": 10, "reviewFile": "BEWD.txt" },
+    { "id": 83764718, "name": "Monster Reborn", "rating": 8, "reviewFile": "MonsterReborn.txt" },
+    { "id": 39111158, "name": "Tri-Horned Dragon", "rating": 5, 
+    "reviewText": "Not bad I guess, but it's just an objectively worse Blue-Eyes by 150 ATK/DEF each. Also looks ugly as hell." },
+    { "id": 76184692, "name": "Hitotsu-Me Giant", "rating": 3, 
+    "reviewText": "This card is special to me- I got him in a McDonald's toy when I was like 8. But, alas, still dogwater, even for the time. " },
+    { "id": 45231177, "name": "Flame Swordsman", "rating": 4, "reviewText": "One of the classic 'wtf is this' fusions of early yugioh. Cool art tho" }
   ]
 }
 

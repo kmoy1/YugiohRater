@@ -1,37 +1,15 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import { Routes, Route, Link, useNavigate } from 'react-router-dom'
 import CardDetails from './components/CardDetails'
+import CardPage from './pages/CardPage'
+import { CardListItem, loadCards, normalizePack } from './lib/cards'
 
-type CardListItem = {
-  id?: number
-  name: string
-  rating: number
-  review?: string
-  reviewFile?: string
-  pack?: string
-}
-
-type PackFile = {
-  pack: string
-  cards: CardListItem[]
-}
-
-export default function App() {
-  const modules = import.meta.glob('./data/**/cards.json', { eager: true }) as Record<string, { default: PackFile }>
-  const cards = useMemo(() => {
-    const list: CardListItem[] = []
-    for (const mod of Object.values(modules)) {
-      const pf = mod.default
-      for (const c of pf.cards) {
-        list.push({ ...c, pack: c.pack ?? pf.pack })
-      }
-    }
-    return list
-  }, [])
+function HomeView() {
+  const cards = useMemo(() => loadCards(), [])
   const [index, setIndex] = useState(0)
   const [selectedPack, setSelectedPack] = useState<string>('All')
-  const [view, setView] = useState<'collections' | 'single' | 'list'>('collections')
-
-  const normalizePack = (p?: string) => p ?? 'Unspecified Pack'
+  const [view, setView] = useState<'collections' | 'single'>('collections')
+  const navigate = useNavigate()
 
   const packs = useMemo(() => {
     const set = new Set<string>()
@@ -59,14 +37,26 @@ export default function App() {
   const goPrev = useCallback(() => setIndex((i) => clamp(i - 1)), [filtered.length])
   const goNext = useCallback(() => setIndex((i) => clamp(i + 1)), [filtered.length])
 
+  const openCard = useCallback((card?: CardListItem) => {
+    if (!card?.id) return
+    const query = selectedPack !== 'All' ? `?pack=${encodeURIComponent(selectedPack)}` : ''
+    navigate(`/card/${card.id}${query}`)
+  }, [navigate, selectedPack])
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowLeft') goPrev()
-      if (e.key === 'ArrowRight') goNext()
+      if (e.key === 'ArrowLeft') {
+        if (view === 'single' && index > 0) openCard(filtered[index - 1])
+        else goPrev()
+      }
+      if (e.key === 'ArrowRight') {
+        if (view === 'single' && index < filtered.length - 1) openCard(filtered[index + 1])
+        else goNext()
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [goPrev, goNext])
+  }, [goPrev, goNext, filtered, index, view, openCard])
 
   return (
     <div className="container min-vh-100 d-flex flex-column py-3">
@@ -93,7 +83,6 @@ export default function App() {
         <div className="btn-group" role="group" aria-label="View toggle">
           <button type="button" className={`btn btn-outline-secondary ${view === 'collections' ? 'active' : ''}`} onClick={() => setView('collections')}>Collections</button>
           <button type="button" className={`btn btn-outline-secondary ${view === 'single' ? 'active' : ''}`} onClick={() => setView('single')}>Single</button>
-          <button type="button" className={`btn btn-outline-secondary ${view === 'list' ? 'active' : ''}`} onClick={() => setView('list')}>List</button>
         </div>
       </section>
 
@@ -105,13 +94,7 @@ export default function App() {
                 <div className="card-body d-flex flex-column">
                   <h2 className="h6 mb-1 text-break">{pack}</h2>
                   <div className="text-secondary small mb-3">{packCounts.get(pack)} card(s)</div>
-                  <button
-                    type="button"
-                    className="btn btn-primary mt-auto"
-                    onClick={() => { setSelectedPack(pack); setIndex(0); setView('single') }}
-                  >
-                    View
-                  </button>
+                  <button type="button" className="btn btn-primary mt-auto" onClick={() => { setSelectedPack(pack); setIndex(0); setView('single') }}>View</button>
                 </div>
               </div>
             </div>
@@ -121,35 +104,28 @@ export default function App() {
         <main className="row justify-content-center g-3 flex-grow-1 align-content-center">
           <div className="col-12 col-md-10 col-lg-8 col-xl-7">
             {filtered.length > 0 ? (
-              <CardDetails key={filtered[index].id ?? filtered[index].name} item={filtered[index]} />
+              <>
+                <CardDetails key={filtered[index].id ?? filtered[index].name} item={filtered[index]} />
+                {filtered[index].id && (
+                  <div className="d-flex justify-content-end mt-2">
+                    <Link className="btn btn-sm btn-outline-primary" to={`/card/${filtered[index].id}${selectedPack !== 'All' ? `?pack=${encodeURIComponent(selectedPack)}` : ''}`}>Open Link</Link>
+                  </div>
+                )}
+              </>
             ) : (
               <div className="alert alert-warning">No cards found in this category</div>
             )}
           </div>
         </main>
-      ) : (
-        <main className="row g-3 flex-grow-1">
-          {filtered.length > 0 ? (
-            filtered.map((c) => (
-              <div className="col-12 col-md-6 col-lg-4" key={c.id ?? c.name}>
-                <CardDetails item={c} />
-              </div>
-            ))
-          ) : (
-            <div className="col-12">
-              <div className="alert alert-warning">No cards found in this category</div>
-            </div>
-          )}
-        </main>
-      )}
+      ) : null}
 
       {view === 'single' && filtered.length > 0 && (
         <div className="d-flex align-items-center justify-content-center gap-2 mt-2">
-          <button type="button" className="btn btn-outline-secondary" onClick={goPrev} disabled={index === 0}>
+          <button type="button" className="btn btn-outline-secondary" onClick={() => openCard(filtered[index - 1])} disabled={index === 0}>
             ← Previous
           </button>
           <span className="text-secondary small">{index + 1} of {filtered.length}</span>
-          <button type="button" className="btn btn-primary" onClick={goNext} disabled={index === filtered.length - 1}>
+          <button type="button" className="btn btn-primary" onClick={() => openCard(filtered[index + 1])} disabled={index === filtered.length - 1}>
             Next →
           </button>
         </div>
@@ -159,5 +135,14 @@ export default function App() {
         Data courtesy of YGOPRODeck API
       </footer>
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomeView />} />
+      <Route path="/card/:id" element={<CardPage />} />
+    </Routes>
   )
 }

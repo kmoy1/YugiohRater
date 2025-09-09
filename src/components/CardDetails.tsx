@@ -1,16 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
+import type { CardListItem } from '../lib/cards'
 
 function formatStat(value: number | undefined | null) {
   return value === undefined || value === null ? '—' : value
-}
-
-type CardListItem = {
-  id?: number
-  name: string
-  rating: number
-  review?: string
-  reviewFile?: string
-  pack?: string
 }
 
 type YgoCard = {
@@ -28,11 +20,11 @@ type YgoCard = {
 }
 
 export default function CardDetails({ item }: { item: CardListItem }) {
-  const { id, name, rating, review, reviewFile } = item
+  const { id, name, rating, reviewText: inlineReview, review, reviewFile } = item
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<Error | null>(null)
   const [card, setCard] = useState<YgoCard | null>(null)
-  const [reviewText, setReviewText] = useState<string>(review ?? '')
+  const [reviewText, setReviewText] = useState<string>(inlineReview ?? review ?? '')
 
   const url = useMemo(() => {
     if (id) return `https://db.ygoprodeck.com/api/v7/cardinfo.php?id=${id}`
@@ -64,11 +56,27 @@ export default function CardDetails({ item }: { item: CardListItem }) {
     return () => controller.abort()
   }, [url])
 
-  // Load external review text file if provided
+  // Keep review text in sync with incoming props
+  useEffect(() => {
+    if (inlineReview) {
+      setReviewText(inlineReview)
+      return
+    }
+    if (review && !reviewFile) {
+      setReviewText(review)
+      return
+    }
+    // Clear before possibly fetching a file to avoid showing stale text
+    setReviewText('')
+  }, [inlineReview, review, reviewFile, id])
+
+  // Load external review text file if provided and no inline review exists
   useEffect(() => {
     let active = true
+    if (inlineReview || review) return
     if (!reviewFile) return
-    fetch(`/reviews/${reviewFile}`)
+    const prefix = item.packSlug ? `/reviews/${item.packSlug}/` : '/reviews/'
+    fetch(`${prefix}${reviewFile}`)
       .then(async (res) => {
         if (!res.ok) throw new Error(`Review HTTP ${res.status}`)
         return res.text()
@@ -76,7 +84,7 @@ export default function CardDetails({ item }: { item: CardListItem }) {
       .then((txt) => { if (active) setReviewText(txt) })
       .catch(() => { /* keep fallback review text */ })
     return () => { active = false }
-  }, [reviewFile])
+  }, [inlineReview, review, reviewFile, item.packSlug])
 
   return (
     <article className="card shadow-sm h-100 ygo-card">

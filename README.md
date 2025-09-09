@@ -11,6 +11,7 @@ Features
 - Fetch card metadata and images on the client from YGOPRODeck.
 - Clean, responsive layout with loading and error states.
  - Bootstrap 5 grid and card components.
+ - Per-card deep links: open any card at `/card/:id` with optional `?pack=...` to scope navigation.
 
 Getting Started
 ---------------
@@ -65,20 +66,40 @@ Card Fields
 - `rating`: Number from 0–10.
 - `review`: Your short review text.
  - `pack`: Not needed in individual card entries; it’s taken from the folder’s `cards.json` header.
- - `review` (optional): Short inline review string (JSON-escaped if multi-line).
- - `reviewFile` (optional, recommended): Name of a `.txt` file in `public/reviews/` containing your review. Newlines are preserved.
+- `review` (optional): Short inline review string (JSON-escaped if multi-line).
+- `reviewFile` (optional, recommended): Name of a `.txt` file in `public/reviews/` containing your review. Newlines are preserved.
+ - `reviewText` (optional): Inline review for short notes. If present, it overrides `reviewFile` and is shown directly.
 
 Writing Multi-line Reviews
 --------------------------
-1) Create a `.txt` file in `public/reviews/`, e.g. `public/reviews/89631139.txt`.
-2) Put your multi-line review in that file. No JSON escaping needed.
-3) In `src/data/cards.json`, set `"reviewFile": "89631139.txt"` for that card. If both `review` and `reviewFile` exist, the text file takes precedence.
+Place reviews under a subfolder per collection in `public/reviews/<CollectionFolder>/` to match your data folders.
+
+Example (Legend of Blue Eyes White Dragon):
+- Data: `src/data/LegendBEWD/cards.json` (pack = "Legend of Blue Eyes White Dragon")
+- Review file: `public/reviews/LegendBEWD/89631139.txt`
+- Card entry uses just the filename:
+
+{
+  "id": 89631139,
+  "name": "Blue-Eyes White Dragon",
+  "rating": 10,
+  "reviewFile": "89631139.txt"
+}
+
+Notes:
+- The review loader auto-resolves to `/reviews/<packFolder>/<reviewFile>` using the folder name under `src/data/`.
+- Precedence: `reviewText` (if present) > `reviewFile` (if present) > `review` (legacy field).
 
 Packs & Views
  ------------------
 - Use the Pack dropdown to filter cards by pack, or select "All".
-- Toggle between "Single" (one-at-a-time with Previous/Next and arrow keys) and "List" (shows all cards in the selected category).
- - Use the Collections view to see all packs (from folders) with counts; click a pack to drill into Single view for that pack.
+- Toggle between "Collections" and "Single" (one-at-a-time with Previous/Next and arrow keys).
+ - Collections lists every pack with a count; click a pack to drill into Single view for that pack.
+
+Deep Links
+----------
+- Navigate directly to `/card/:id` (e.g., `/card/89631139`).
+- Add `?pack=<Pack Name>` to constrain Previous/Next to that pack (e.g., `/card/89631139?pack=Legend%20of%20Blue%20Eyes%20White%20Dragon`).
 
 How It Works
 ------------
