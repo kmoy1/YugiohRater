@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import CardDetails from './components/CardDetails'
-import cardsData from './data/cards.json'
 
 type CardListItem = {
   id?: number
@@ -11,21 +10,47 @@ type CardListItem = {
   pack?: string
 }
 
+type PackFile = {
+  pack: string
+  cards: CardListItem[]
+}
+
 export default function App() {
-  const cards = cardsData as CardListItem[]
+  const modules = import.meta.glob('./data/**/cards.json', { eager: true }) as Record<string, { default: PackFile }>
+  const cards = useMemo(() => {
+    const list: CardListItem[] = []
+    for (const mod of Object.values(modules)) {
+      const pf = mod.default
+      for (const c of pf.cards) {
+        list.push({ ...c, pack: c.pack ?? pf.pack })
+      }
+    }
+    return list
+  }, [])
   const [index, setIndex] = useState(0)
   const [selectedPack, setSelectedPack] = useState<string>('All')
-  const [view, setView] = useState<'single' | 'list'>('single')
+  const [view, setView] = useState<'collections' | 'single' | 'list'>('collections')
+
+  const normalizePack = (p?: string) => p ?? 'Unspecified Pack'
 
   const packs = useMemo(() => {
     const set = new Set<string>()
-    for (const c of cards) set.add(c.pack ?? 'Unspecified Pack')
+    for (const c of cards) set.add(normalizePack(c.pack))
     return ['All', ...Array.from(set).sort((a, b) => a.localeCompare(b))]
+  }, [cards])
+
+  const packCounts = useMemo(() => {
+    const map = new Map<string, number>()
+    for (const c of cards) {
+      const key = normalizePack(c.pack)
+      map.set(key, (map.get(key) ?? 0) + 1)
+    }
+    return map
   }, [cards])
 
   const filtered = useMemo(() => {
     if (selectedPack === 'All') return cards
-    return cards.filter((c) => (c.pack ?? 'Unspecified Pack') === selectedPack)
+    return cards.filter((c) => normalizePack(c.pack) === selectedPack)
   }, [cards, selectedPack])
 
   useEffect(() => { setIndex(0) }, [selectedPack])
@@ -51,25 +76,48 @@ export default function App() {
       </header>
 
       <section className="d-flex flex-wrap align-items-center justify-content-center gap-2 mb-2">
-        <div className="input-group" style={{ maxWidth: 420 }}>
-          <span className="input-group-text">Pack</span>
-          <select
-            className="form-select"
-            value={selectedPack}
-            onChange={(e) => setSelectedPack(e.target.value)}
-          >
-            {packs.map((p) => (
-              <option key={p} value={p}>{p}</option>
-            ))}
-          </select>
-        </div>
+        {view !== 'collections' && (
+          <div className="input-group" style={{ maxWidth: 420 }}>
+            <span className="input-group-text">Pack</span>
+            <select
+              className="form-select"
+              value={selectedPack}
+              onChange={(e) => setSelectedPack(e.target.value)}
+            >
+              {packs.map((p) => (
+                <option key={p} value={p}>{p}</option>
+              ))}
+            </select>
+          </div>
+        )}
         <div className="btn-group" role="group" aria-label="View toggle">
+          <button type="button" className={`btn btn-outline-secondary ${view === 'collections' ? 'active' : ''}`} onClick={() => setView('collections')}>Collections</button>
           <button type="button" className={`btn btn-outline-secondary ${view === 'single' ? 'active' : ''}`} onClick={() => setView('single')}>Single</button>
           <button type="button" className={`btn btn-outline-secondary ${view === 'list' ? 'active' : ''}`} onClick={() => setView('list')}>List</button>
         </div>
       </section>
 
-      {view === 'single' ? (
+      {view === 'collections' ? (
+        <main className="row g-3 flex-grow-1 align-content-start">
+          {Array.from(packCounts.keys()).sort((a, b) => a.localeCompare(b)).map((pack) => (
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={pack}>
+              <div className="card h-100 shadow-sm">
+                <div className="card-body d-flex flex-column">
+                  <h2 className="h6 mb-1 text-break">{pack}</h2>
+                  <div className="text-secondary small mb-3">{packCounts.get(pack)} card(s)</div>
+                  <button
+                    type="button"
+                    className="btn btn-primary mt-auto"
+                    onClick={() => { setSelectedPack(pack); setIndex(0); setView('single') }}
+                  >
+                    View
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </main>
+      ) : view === 'single' ? (
         <main className="row justify-content-center g-3 flex-grow-1 align-content-center">
           <div className="col-12 col-md-10 col-lg-8 col-xl-7">
             {filtered.length > 0 ? (

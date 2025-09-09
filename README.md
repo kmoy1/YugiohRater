@@ -6,7 +6,7 @@ A minimal React app that displays Yu-Gi-Oh! cards with your pre-written rating a
 Features
 --------
 - Store only `id`, `name`, `rating`, `review` locally in `src/data/cards.json`.
-- Add a `pack` per card (official product/collection name, e.g., "Legend of Blue Eyes White Dragon", "Starter Deck: Yugi") and filter by pack.
+- Packs are now organized as folders under `src/data/**/cards.json`, and the UI auto-loads them.
  - Multi-line reviews via external text files per card (no escaping needed).
 - Fetch card metadata and images on the client from YGOPRODeck.
 - Clean, responsive layout with loading and error states.
@@ -30,21 +30,41 @@ Prerequisites: Node.js 18+ recommended.
 
 Editing Your Card List
 ----------------------
-Edit `src/data/cards.json`. Each item should have:
+Data Structure
+--------------
+Create one folder per collection under `src/data/` with a `cards.json` file:
+
+src/data/LegendBEWD/cards.json
+src/data/MetalRaiders/cards.json
+src/data/StarterDeckYugi/cards.json
+
+Each `cards.json` looks like:
+
+{
+  "pack": "Legend of Blue Eyes White Dragon",
+  "cards": [
+    { "id": 89631139, "name": "Blue-Eyes White Dragon", "rating": 10, "reviewFile": "89631139.txt" },
+    { "id": 83764718, "name": "Monster Reborn", "rating": 8, "reviewFile": "83764718.txt" }
+  ]
+}
+
+The `pack` value is applied to each card in that folder automatically.
+
+Card Fields
+-----------
 
 {
   "id": 89631139,
   "name": "Blue-Eyes White Dragon",
   "rating": 9,
-"reviewFile": "89631139.txt",
-"pack": "Legend of Blue Eyes White Dragon"
+"reviewFile": "89631139.txt"
 }
 
 - `id`: Recommended (YGOPRODeck passcode). If omitted, the app falls back to `name`.
 - `name`: Used for display and as a fetch fallback if `id` is missing.
 - `rating`: Number from 0–10.
 - `review`: Your short review text.
- - `pack` (optional): The official product/collection name (e.g., "Legend of Blue Eyes White Dragon", "Metal Raiders", "Starter Deck: Yugi"). Missing values appear under "Unspecified Pack".
+ - `pack`: Not needed in individual card entries; it’s taken from the folder’s `cards.json` header.
  - `review` (optional): Short inline review string (JSON-escaped if multi-line).
  - `reviewFile` (optional, recommended): Name of a `.txt` file in `public/reviews/` containing your review. Newlines are preserved.
 
@@ -55,9 +75,10 @@ Writing Multi-line Reviews
 3) In `src/data/cards.json`, set `"reviewFile": "89631139.txt"` for that card. If both `review` and `reviewFile` exist, the text file takes precedence.
 
 Packs & Views
-------------------
+ ------------------
 - Use the Pack dropdown to filter cards by pack, or select "All".
 - Toggle between "Single" (one-at-a-time with Previous/Next and arrow keys) and "List" (shows all cards in the selected category).
+ - Use the Collections view to see all packs (from folders) with counts; click a pack to drill into Single view for that pack.
 
 How It Works
 ------------

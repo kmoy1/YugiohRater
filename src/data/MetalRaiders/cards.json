@@ -1,0 +1,7 @@
+{
+  "pack": "Metal Raiders",
+  "cards": [
+    { "id": 44095762, "name": "Mirror Force", "rating": 6, "reviewFile": "MirrorForce.txt" }
+  ]
+}
+

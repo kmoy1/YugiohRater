@@ -1,0 +1,8 @@
+{
+  "pack": "Legend of Blue Eyes White Dragon",
+  "cards": [
+    { "id": 89631139, "name": "Blue-Eyes White Dragon", "rating": 10, "reviewFile": "89631139.txt" },
+    { "id": 83764718, "name": "Monster Reborn", "rating": 8, "reviewFile": "83764718.txt" }
+  ]
+}
+
