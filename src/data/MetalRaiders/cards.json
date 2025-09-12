@@ -1,7 +1,869 @@
 {
   "pack": "Metal Raiders",
   "cards": [
-    { "id": 44095762, "name": "Mirror Force", "rating": 8, "reviewFile": "MirrorForce.txt" }
+    {
+      "id": 23771716,
+      "name": "7 Colored Fish",
+      "rating": 5,
+      "reviewText": "1800 is a great ATK for its time and for a LVL 4 monster."
+    },
+    {
+      "id": 42431843,
+      "name": "Ancient Brain",
+      "rating": 1,
+      "reviewText": "Ugh here we go again with the trash"
+    },
+    {
+      "id": 93221206,
+      "name": "Ancient Elf",
+      "rating": 2,
+      "reviewText": "An elf with mid stats"
+    },
+    {
+      "id": 43230671,
+      "name": "Ancient Lizard Warrior",
+      "rating": 2,
+      "reviewText": "A lizard with mid stats"
+    },
+    {
+      "id": 15480588,
+      "name": "Armored Lizard",
+      "rating": 2,
+      "reviewText": "A lizard with slightly better but still mid stats"
+    },
+    {
+      "id": 20277860,
+      "name": "Armored Zombie",
+      "rating": 2,
+      "reviewText": "Mid again, and an introduction to the 0 DEF trope with zombies."
+    },
+    {
+      "id": 88819587,
+      "name": "Baby Dragon",
+      "rating": 5,
+      "reviewText": "Iconic card used by Yugi in the anime to fuse Thousand Dragon"
+    },
+    {
+      "id": 81480460,
+      "name": "Barrel Dragon",
+      "rating": 5,
+      "reviewText": "The probability of getting at least two heads when flipping coins is 50%. So not bad actually. But the stats for a monster that needs 2 tributes are very disappointing."
+    },
+    {
+      "id": 18246479,
+      "name": "Battle Steer",
+      "rating": 1,
+      "reviewText": "Any normal monster that needs a tribute and has < 2000 ATK immediately gets a 1, just letting yall know now"
+    },
+    {
+      "id": 25655502,
+      "name": "Bickuribox",
+      "rating": 3,
+      "reviewText": "I like the art, but another just 'not worth it' fusion"
+    },
+    {
+      "id": 16768387,
+      "name": "Big Eye",
+      "rating": 4,
+      "reviewText": "Cute lil effect where the eye means u can see ur deck's top cards. I like the creativity, but it's a FLIP effect so you have to wait a turn and it's not worth it tbh."
+    },
+    {
+      "id": 11901678,
+      "name": "Black Skull Dragon",
+      "rating": 7,
+      "reviewText": "Now we're talking. A fusion of 2 iconic cards and a 3200 ATK beatstick. Still not super practical in competitive play though even at the time."
+    },
+    {
+      "id": 87564352,
+      "name": "Blackland Fire Dragon",
+      "rating": 3,
+      "reviewText": "Mid stats for a dragon. It even has a weakness in its card description. "
+    },
+    {
+      "id": 28470714,
+      "name": "Bladefly",
+      "rating": 5.5,
+      "reviewText": "The first of a set of early cards that had ATK increase for one attribute and ATK decrease for another. This actually saw use in early Harpie decks, and also EARTH was a pretty common attribute so this gnat definitely had use."
+    },
+    {
+      "id": 70138455,
+      "name": "Blast Juggler",
+      "rating": 4,
+      "reviewText": "Not too bad- the < 1000 ATK really limits it though. At the time there wasn't much monster removal (only Dark Hole, Fissure, etc which were limited) so this actually did see use."
+    },
+    {
+      "id": 25880422,
+      "name": "Block Attack",
+      "rating": 3,
+      "reviewText": "It's a simple, positive effect. A lot of monsters had really low DEF (compared to their ATK) and this could be a way to do that. Still way too slow for competitive play though even for the time. "
+    },
+    {
+      "id": 41396436,
+      "name": "Blue-Winged Crown",
+      "rating": 3,
+      "reviewText": "Decent stats for a LVL 4. Not much else to say."
+    },
+    {
+      "id": 81386177,
+      "name": "Bottom Dweller",
+      "rating": 1,
+      "reviewText": "Yeah you really are buddy."
+    },
+    {
+      "id": 11384280,
+      "name": "Cannon Soldier",
+      "rating": 10,
+      "reviewText": "An iconic monster that is a pioneer of the burn OTK strategies and absolutely still holds relevance today. It's one of the cards that didn't have a limit on its burn effect (praying no errata is made), which Konami REALLY tries to limit with modern cards. The possibilities are endless- you can pair Cannon Soldier with token generators (Scapegoat) or Frogs that constantly regenerate monsters. Easy 10/10."
+    },
+    {
+      "id": 62121,
+      "name": "Castle of Dark Illusions",
+      "rating": 3,
+      "reviewText": "A Fiend ATK/DEF support card with those weird early Yugioh stats. Unfortunately, it didn't see much play because it is simply too slow (needs FLIP, only +200 each turn)."
+    },
+     {
+      "id": 95727991,
+      "name": "Catapult Turtle",
+      "rating": 1,
+      "reviewText": "Used by Yugi in the anime. Half the ATK of a tributed monster isn't bad, but REALLY held back by the need for a tribute and the once per turn limit (unlike Cannon Soldier). I think it wasn't once per turn originally but now that the Once per turn limit is added it's completely unusable."
+    },
+    {
+      "id": 4031928,
+      "name": "Change of Heart",
+      "rating": 10,
+      "reviewText": "Another iconic spell. Taking control of a monster for free was, and still is, one of the strongest effects in the game. It was banned for years and years and is now limited and still widely used as a staple."
+    },
+    {
+      "id": 40240595,
+      "name": "Cocoon of Evolution",
+      "rating": 1,
+      "reviewText": "Used as a shield for Petit Moth so it can survive longer. But the whole Petit Moth to Great Moth thing was so absolutely unplayable (even back then) this still gets a 1."
+    },
+    {
+      "id": 93889755,
+      "name": "Crass Clown",
+      "rating": 6,
+      "reviewText": "A key part of the infamous 'Clown Control' decks (along with Dream Clown) that aimed to get field advantage combined with stall cards, due the reusability of his effect. Never really saw much competitve play but still made a cool GOAT format deck."
+    },
+    {
+      "id": 67494157,
+      "name": "Crawling Dragon",
+      "rating": 1,
+      "reviewText": "Crawl ur way off my screen."
+    },
+    {
+      "id": 89112729,
+      "name": "Cyber Saurus",
+      "rating": 2.5,
+      "reviewText": "T Rex with a minigun is American asf lol. The card is godawful but I'll give it some extra credit just for the art/concept."
+    },
+    {
+      "id": 21417692,
+      "name": "Dark Elf",
+      "rating": 2,
+      "reviewText": "One of the first 'restricted LVL 4 monsters with >= 2000 ATK'. Could be useful to immediately get over a powerful LVL4 monster but just not really worth it in the long run. "
+    },
+    {
+      "id": 28593363,
+      "name": "Deepsea Shark",
+      "rating": 1,
+      "reviewText": "How r yall today?"
+    },
+    {
+      "id": 73481154,
+      "name": "Destroyer Golem",
+      "rating": 2,
+      "reviewText": "Mid statted LVL4 pack filler once again."
+    },
+    {
+      "id": 76446915,
+      "name": "Disk Magician",
+      "rating": 1.5,
+      "reviewText": "Mid statted LVL4 pack filler once again"
+    },
+    {
+      "id": 16972957,
+      "name": "Doma The Angel of Silence",
+      "rating": 1,
+      "reviewText": "Hard card art but idc I'm following my 'shitty LVL 5+ normal monsters get a 1' rule"
+    },
+    {
+      "id": 55763552,
+      "name": "Dragon Piper",
+      "rating": 2,
+      "reviewText": "WAYYYY too situational, I guess it could be used as a side deck card??? Obviously would see no use today and probably didn't back then either."
+    },
+    {
+      "id": 13215230,
+      "name": "Dream Clown",
+      "rating": 8,
+      "reviewText": "The main part of the Clown Control archetype, and much better than the bouncing effect of Crass Clown. Combined with stall cards like Swords of Revealing Light, Messenger of Peace, Gravity Bind, etc, Dream Clown can slowly give field advantage one turn at a time. Clown Control overall is just realistically too slow (even for the time), but it still has a cult following today."
+    },
+    {
+      "id": 55875323,
+      "name": "Electric Lizard",
+      "rating": 1.5,
+      "reviewText": "Scary ass card art and effect is too slow. Get off my screen."
+    },
+    {
+      "id": 90219263,
+      "name": "Elegant Egotist",
+      "rating": 7,
+      "reviewText": "Now we're moving- this is the heart and soul of the Harpie archetype. At the time, VERY few cards allowed free Deck summons, so it gave Harpies a unique swarm potential."
+    },
+    {
+      "id": 15237615,
+      "name": "Empress Judge",
+      "rating": 1,
+      "reviewText": "Off my screen please. Baddie though."
+    },
+    {
+      "id": 3027001,
+      "name": "Fake Trap",
+      "rating": 1.5,
+      "reviewText": "Cute effect, but the reality is this is literally useless unless your opponent tries to destroy your traps, and it also has to be set, taking up a whole S/T zone until the condition is fulfilled. Cheeks."
+    },
+    {
+      "id": 41392891,
+      "name": "Feral Imp",
+      "rating": 2,
+      "reviewText": "Used in the anime but mid again"
+    },
+    {
+      "id": 60862676,
+      "name": "Flame Cerebrus",
+      "rating": 3,
+      "reviewText": "At least it's > 2000 ATK."
+    },
+    {
+      "id": 49888191,
+      "name": "Garnecia Elefantis",
+      "rating": 1,
+      "reviewText": "Underwhelming stats for a monster that need 2 tributes. Sorry."
+    },
+    {
+      "id": 25833572,
+      "name": "Gate Guardian",
+      "rating": 6,
+      "reviewText": "Unbelievably iconic card and in the anime. But this is one of the most difficult to summon monsters in Yugioh history, making it unplayable (except in Duel Links where there's a skill that makes it easier). 3 Level 7 monsters needing to be on the field is just way too long. It also just had no protection after all that. But it's a collector's favorite."
+    },
+    {
+      "id": 5818798,
+      "name": "Gazelle the King of Mythical Beasts",
+      "rating": 2,
+      "reviewText": "Was frequently used by Yugi the anime and is a fusion material for Chimera the Flying Mythical Beast (along with Berfomet). Other than that, not much else to say."
+    },
+    {
+      "id": 24668830,
+      "name": "Germ Infection",
+      "rating": 2,
+      "reviewText": "Drops ATK by 300 points each turn. While technically positive, still just painfully slow and never saw competitive play."
+    },
+    {
+      "id": 8471389,
+      "name": "Giga-Tech Wolf",
+      "rating": 2,
+      "reviewText": "HARD ass card art but bad stats."
+    },
+    {
+      "id": 51828629,
+      "name": "Giltia the D. Knight",
+      "rating": 1,
+      "reviewText": "Nice Link ripoff lol. Get off my screen."
+    },
+    {
+      "id": 14141448,
+      "name": "Great Moth",
+      "rating": 1,
+      "reviewText": "Just way too slow and unusable. Petit Moth + Cocoon of Evolution needs to survive for 4 turns, AND great moth needs to be in your hand. Stats aren't even that good lol."
+    },
+    {
+      "id": 58314394,
+      "name": "Ground Attacker Bugroth",
+      "rating": 2,
+      "reviewText": "Mid, but they made more bugroths which have cool art."
+    },
+    {
+      "id": 89272878,
+      "name": "Guardian of the Labyrinth",
+      "rating": 1,
+      "reviewText": "Ass"
+    },
+    {
+      "id": 76812113,
+      "name": "Harpie Lady",
+      "rating": 3,
+      "reviewText": "Heart of Mai Valentine's deck and core of the Harpie archetype. Mid stats. Fun fact: only three copies of any “Harpie Lady” (including alternate forms like Harpie Lady Sisters, Cyber Harpie Lady) could be in your Deck, which forced players to choose which versions to run."
+    },
+    {
+      "id": 12206212,
+      "name": "Harpie Lady Sisters",
+      "rating": 2,
+      "reviewText": "Seems like a boss monster but is just too clunky and mid stats-wise to be used competitively (can be said about the whole Harpie archetype). You could only Special Summon it with Elegant Egotist while controlling a Harpie Lady, and was a complete dead draw otherwise."
+    },
+    {
+      "id": 19613556,
+      "name": "Heavy Storm",
+      "rating": 10,
+      "reviewText": "Now we're cooking again- one of the most format-defining spells in Yugioh history, still seeing heavy (no pun intended) play to this day. The ability to completely wipe out opponent's backrow is still absurdly powerful and was often enough to win the game. It's bounced between LIMITED and BANNED for years and years now."
+    },
+    {
+      "id": 64501875,
+      "name": "Hibikime",
+      "rating": 2,
+      "reviewText": "I really should just leave these mid normal monsters as 1 to save time"
+    },
+    {
+      "id": 98069388,
+      "name": "Horn of Heaven",
+      "rating": 5,
+      "reviewText": "The first of the summon negation cards, used by Kaiba in the anime. Back in the day field presence won duels so a tribute was a tough decision. Today this might be less of a cost, but there's just better cards like Solemn Judgment and Solemn Warning. Never really saw competitive play."
+    },
+    {
+      "id": 67629977,
+      "name": "Hoshiningen",
+      "rating": 3,
+      "reviewText": "The LIGHT variant of Bladefly. Obviously will see use in LIGHT-centered archetypes. But still just too slow and the stats are just bad."
+    },
+    {
+      "id": 80141480,
+      "name": "Hunter Spider",
+      "rating": 1,
+      "reviewText": "Off."
+    },
+    {
+      "id": 2118022,
+      "name": "Hyosube",
+      "rating": 2,
+      "reviewText": "My."
+    },
+    {
+      "id": 28546905,
+      "name": "Illusionist Faceless Mage",
+      "rating": 1,
+      "reviewText": "Screen."
+    },
+    {
+      "id": 7019529,
+      "name": "Insect Soldiers of the Sky",
+      "rating": 2,
+      "reviewText": "Decent I guess (it becomes 2000 ATK when it attacks WIND) but still too situational. And just cheeks when it battles a non WIND."
+    },
+    {
+      "id": 14851496,
+      "name": "Jellyfish",
+      "rating": 1,
+      "reviewText": "That is a jellyfish! Any other cards with generic names of species? Where is 'Ant'? 'Monkey'? "
+    },
+    {
+      "id": 32809211,
+      "name": "Jinzo #7",
+      "rating": 3,
+      "reviewText": "One of the first 'direct attacker' cards in the game. It could be used with stall cards like Swords of Revealing Light, and then add on equip spells that boost ATK, but that's just too slow and it still just never saw competitive play."
+    },
+    {
+      "id": 94773007,
+      "name": "Jirai Gumo",
+      "rating": 5,
+      "reviewText": "A semi-infamous card. Amazing ATK for a LVL4- but a steep cost if u lost the coin flip. Back in the day though, field presence was king, and it was worth it to beat over other cards even at the risk of LP halving. Jirai Gumo actually did see competitive experimentation in aggressive decks back in the day, but obviously became obselete over time."
+    },
+    {
+      "id": 9653271,
+      "name": "Kaminari Attack",
+      "rating": 1,
+      "reviewText": "Wtf even is this lol"
+    },
+    {
+      "id": 62340868,
+      "name": "Kazejin",
+      "rating": 3,
+      "reviewText": "One of the three iconic guardian pieces for Gate Guardian. Its reduce ATK to 0 ability was neat but too clunky. 2 Tributes for this mid-statted monster was just too much."
+    },
+    {
+      "id": 88979991,
+      "name": "Killer Needle",
+      "rating": 1,
+      "reviewText": "Beedrill ripoff lol. Also fuck it for normal monsters unless they have ABOVE AVERAGE stats (e.g. 7 colored fish, la jinn) I'm giving them a default 1."
+    },
+    {
+      "id": 69455834,
+      "name": "King of Yamimakai",
+      "rating": 1,
+      "reviewText": "Yeesh."
+    },
+    {
+      "id": 1184620,
+      "name": "Kojikocy",
+      "rating": 1,
+      "reviewText": "Following the rule made at Killer Needle. Life is so much easier this way."
+    },
+    {
+      "id": 40640057,
+      "name": "Kuriboh",
+      "rating": 6.5,
+      "reviewText": "One of the most iconic monsters in Yugioh and a close pal of Yugi as a 'protector card', but never really good enough to see real life play. It was legitimately the first 'hand trap' which would become ESSENTIAL in Modern Yugioh, even if Kuriboh itself was trash. Over time, it received tons of spin-offs (Winged Kuriboh, Sphere Kuriboh, etc.) and even its own archetype support as a fan-favorite."
+    },
+    {
+      "id": 99551425,
+      "name": "Labyrinth Tank",
+      "rating": 2,
+      "reviewText": "Decent stats actually but just not worth it."
+    },
+    {
+      "id": 17358176,
+      "name": "Lady of Faith",
+      "rating": 1,
+      "reviewText": "Zero faith in this bitch"
+    },
+    {
+      "id": 87756343,
+      "name": "Larvae Moth",
+      "rating": 1,
+      "reviewText": "LOL what even is the point if ur gonna do all that setup just to bring this little fuck out"
+    },
+    {
+      "id": 87322377,
+      "name": "Launcher Spider",
+      "rating": 1,
+      "reviewText": "Terrible stats but hard card art."
+    },
+    {
+      "id": 20394040,
+      "name": "Lava Battleguard",
+      "rating": 1,
+      "reviewText": "Tristan’s signature monster in the anime, but just completely unplayable. Its effect gave it a 500 ATK boost if Swamp Battleguard was on the field, but that synergy required running two bad cards just to get to a still-mediocre 2050 ATK monster."
+    },
+    {
+      "id": 12472242,
+      "name": "Leghul",
+      "rating": 2,
+      "reviewText": "Same review as Jinzo #7, but this is actually worse lol."
+    },
+    {
+      "id": 10538007,
+      "name": "Leogun",
+      "rating": 1,
+      "reviewText": "Lion"
+    },
+    {
+      "id": 68658728,
+      "name": "Little Chimera",
+      "rating": 2,
+      "reviewText": "Same review as Hoshingen and Bladefly."
+    },
+    {
+      "id": 77414722,
+      "name": "Magic Jammer",
+      "rating": 5.5,
+      "reviewText": "One of the first widely played Counter Traps. At a time when power spells like Raigeki, Dark Hole, and Change of Heart could decide games instantly, having a way to stop them was extremely valuable. But still discarding a card meant this was a -1 in card advantage. Saw solid competitive play back then but nearly zero today."
+    },
+    {
+      "id": 31560081,
+      "name": "Magician of Faith",
+      "rating": 9.5,
+      "reviewText": "Yes. A cornerstone of GOAT format, this magician is one of the most powerful FLIP monsters of early Yugioh. Letting you reuse spells like Raigeki, Dark Hole, etc. was just insane. As the card pool expanded and spells became stronger, Magician of Faith eventually became too powerful and was banned for years. Unfortunately it's been power crept today, but still an iconic staple of early Yugioh."
+    },
+    {
+      "id": 28933734,
+      "name": "Mask of Darkness",
+      "rating": 8,
+      "reviewText": "The Trap counterpart of Magician of Faith. The problem was that traps, even good ones like Mirror Force, Torrential Tribute, etc., are INHERENTLY slower than spells and less game-breaking when used multiple times. So it never came close to seeing the play that Magician of Faith did."
+    },
+    {
+      "id": 10189126,
+      "name": "Masked Sorcerer",
+      "rating": 4,
+      "reviewText": "GREAT effect (Drawing is one of the most powerful things you can do in the game) but unfortunately not backed by good enough stats."
+    },
+    {
+      "id": 21817254,
+      "name": "Mega Thunderball",
+      "rating": 1,
+      "reviewText": "Headache is starting to rise"
+    },
+    {
+      "id": 7489323,
+      "name": "Milus Radiant",
+      "rating": 2,
+      "reviewText": "Wtf is this lol? Doggo with piercings? That's crazy."
+    },
+    {
+      "id": 44095762,
+      "name": "Mirror Force",
+      "rating": 8,
+      "reviewFile": "MirrorForce.txt"
+    },
+    {
+      "id": 55784832,
+      "name": "Morinphen",
+      "rating": 1,
+      "reviewText": "Gross."
+    },
+    {
+      "id": 46657337,
+      "name": "Muka Muka",
+      "rating": 2,
+      "reviewText": "Interesting effect but on a full hand of 5 cards that's just 2100 atk and obviously this lowers when cards leave the hand. Keeping a large hand size was impractical without stalling, so this never saw play. "
+    },
+    {
+      "id": 93900406,
+      "name": "Mushroom Man #2",
+      "rating": 1,
+      "reviewText": "One of the stranger cards that kind of had like a chicken game like effect of control switching back and forth. But also just too insignificant of a card to do anything."
+    },
+    {
+      "id": 56907389,
+      "name": "Musician King",
+      "rating": 1,
+      "reviewText": "Lady + Lady = man?"
+    },
+    {
+      "id": 68516705,
+      "name": "Mystic Horseman",
+      "rating": 1,
+      "reviewText": "Generic centaur"
+    },
+    {
+      "id": 98049915,
+      "name": "Mystic Lamp",
+      "rating": 2,
+      "reviewText": "Same review as Jinzo #7 and Leghul"
+    },
+    {
+      "id": 7805359,
+      "name": "Niwatori",
+      "rating": 1,
+      "reviewText": "This is me after Thanksgiving lol"
+    },
+    {
+      "id": 86088138,
+      "name": "Ocubeam",
+      "rating": 1,
+      "reviewText": "Creepy as hell but shite"
+    },
+    {
+      "id": 58861941,
+      "name": "Ooguchi",
+      "rating": 2,
+      "reviewText": "Same review as Jinzo #7, Leghul, Mystic Lamp"
+    },
+    {
+      "id": 21263083,
+      "name": "Pale Beast",
+      "rating": 1,
+      "reviewText": "Creepy af but mid"
+    },
+    {
+      "id": 50152549,
+      "name": "Paralyzing Potion",
+      "rating": 2.5,
+      "reviewText": "Not too bad actually for stopping an opponents boss monster. But obviously there are better cards than this."
+    },
+    {
+      "id": 58192742,
+      "name": "Petit Moth",
+      "rating": 1,
+      "reviewText": "Not worth the whole thing for Great Moth or even Perfectly Ultimate Great Moth."
+    },
+    {
+      "id": 549481,
+      "name": "Prevent Rat",
+      "rating": 1,
+      "reviewText": "Decent DEF but I don't care these still get 1s."
+    },
+    {
+      "id": 51371017,
+      "name": "Princess of Tsurugi",
+      "rating": 4,
+      "reviewText": "One of the earliest burn monsters along with Cannon Soldier and Catapult Turtle. The FLIP effect could sometimes chunk off 1500-2000 LP in one shot which was definitely significant. But relying on that backrow being fully set was the issue and it was inconsistent because of that. Definitely did see play in burn decks though."
+    },
+    {
+      "id": 10071456,
+      "name": "Protector of the Throne",
+      "rating": 1,
+      "reviewText": "Ok"
+    },
+    {
+      "id": 29155212,
+      "name": "Pumpking the King of Ghosts",
+      "rating": 1,
+      "reviewText": "Cool theme but too clunky and slow. Also needed a TRIBUTE wtf lol."
+    },
+    {
+      "id": 74703140,
+      "name": "Punished Eagle",
+      "rating": 1,
+      "reviewText": "How is it punished?"
+    },
+    {
+      "id": 5901497,
+      "name": "Queen's Double",
+      "rating": 2,
+      "reviewText": "Same review as the other ones."
+    },
+    {
+      "id": 94905343,
+      "name": "Rabid Horseman",
+      "rating": 2,
+      "reviewText": "Cool art I guess."
+    },
+    {
+      "id": 21347810,
+      "name": "Rainbow Flower",
+      "rating": 2,
+      "reviewText": "ZZZZZ"
+    },
+    {
+      "id": 20436034,
+      "name": "Ring of Magnetism",
+      "rating": 1.5,
+      "reviewText": "Interesting concept that forced players to attack it, but just not worth really doing since opponent can just not attack and wait for a fissure/smashing ground or something."
+    },
+    {
+      "id": 19066538,
+      "name": "Roaring Ocean Snake",
+      "rating": 1,
+      "reviewText": "Leviathan is cool but terrible stats."
+    },
+    {
+      "id": 88279736,
+      "name": "Robbin' Goblin",
+      "rating": 6,
+      "reviewText": "Now we're talking. In Yugioh card advantage always has been king, and Robbin Goblin allows you to potentially completely clear their hand. That said, the card is a bit setup dependent and only works if you're already winning, linmiting its potential."
+    },
+    {
+      "id": 68846917,
+      "name": "Rock Ogre Grotto #1",
+      "rating": 1,
+      "reviewText": "Ok"
+    },
+    {
+      "id": 24611934,
+      "name": "Ryu-Kishin Powered",
+      "rating": 1,
+      "reviewText": "I'm about to throw up bro"
+    },
+    {
+      "id": 66602787,
+      "name": "Saggi the Dark Clown",
+      "rating": 1,
+      "reviewText": "I deadass ran out of shit to say"
+    },
+    {
+      "id": 25955164,
+      "name": "Sanga of the Thunder",
+      "rating": 5,
+      "reviewText": "One of the three iconic guardian pieces for Gate Guardian. Its reduce ATK to 0 ability was neat but too clunky. 2 Tributes for this mid-statted monster was just too much."
+    },
+    {
+      "id": 26202165,
+      "name": "Sangan",
+      "rating": 10,
+      "reviewText": "one of the most iconic searchers in Yugioh history. Searching for ANY < 1500 ATK monster is just ridiculous on an easy-to-trigger effect. In competitive play, Sangan was a staple for years. It fetched Exodia pieces and gave combo decks like Chaos and Goat Control reliable access to key monsters. It eventually got so format-defining it was BANNED for many years. Unfortunately this boy got nerfed with an errate that lets us use it once per turn and cannot activate the card during the same turn."
+    },
+    {
+      "id": 3819470,
+      "name": "Seven Tools of the Bandit",
+      "rating": 9,
+      "reviewText": "Like Magic Jammer, one of the most important early Counter Traps. It provided a reliable way to negate backrow WITHOUT sacrificing card advantage. In its prime, it was a clutch way to shut down the scariest trap threats of the early game"
+    },
+    {
+      "id": 30778711,
+      "name": "Shadow Ghoul",
+      "rating": 3,
+      "reviewText": "Interesting but just not good enough unless your in the late late game and the grave is absolutely loaded with monsters."
+    },
+    {
+      "id": 56830749,
+      "name": "Share the Pain",
+      "rating": 2,
+      "reviewText": "Very interesting effect that is also unique; forcing opponent to tribute a monster. It meant this could also clear monsters that were unaffected by effects, because this was a COST. Never really saw competitive play though."
+    },
+    {
+      "id": 52097679,
+      "name": "Shield & Sword",
+      "rating": 3,
+      "reviewText": "Swapping ATK/DEF is interesting and could be used for 3000 DEF monsters (Labyrinth wall) but too slow/clunky for real play."
+    },
+    {
+      "id": 2504891,
+      "name": "Skull Knight",
+      "rating": 2,
+      "reviewText": "Decent stats for non-effect fusions."
+    },
+    {
+      "id": 41420027,
+      "name": "Solemn Judgment",
+      "rating": 10,
+      "reviewText": "Behold the most feared counter trap in Yugioh history. Paying half your life points sounds costly, but it was an ALL-PURPOSE negation. This gave it a long-lasting place in the meta. Over the years, its usage grew to the point it spent several formats BANNED. In modern play, the key is to protect the winning position- LP doesn't really matter if you keep that. "
+    },
+    {
+      "id": 5758500,
+      "name": "Soul Release",
+      "rating": 5,
+      "reviewText": "Banishing cards were actually ahead of their time- this didn't really matter in early Yugioh, but now actually sees some play in the side deck for disrupting graveyard-based decks."
+    },
+    {
+      "id": 8201910,
+      "name": "Star Boy",
+      "rating": 2,
+      "reviewText": "Shoutout the Weeknd"
+    },
+    {
+      "id": 13599884,
+      "name": "Steel Scorpion",
+      "rating": 1,
+      "reviewText": "Yeah any of these destroyed after X turns cards is getting an auto 1"
+    },
+    {
+      "id": 83225447,
+      "name": "Stim-Pack",
+      "rating": 2,
+      "reviewText": "Decent enough in the short term I guess. Just use a better equip spell tho."
+    },
+    {
+      "id": 98434877,
+      "name": "Suijin",
+      "rating": 5,
+      "reviewText": "One of the three iconic guardian pieces for Gate Guardian. Its reduce ATK to 0 ability was neat but too clunky. 2 Tributes for this mid-statted monster was just too much"
+    },
+    {
+      "id": 70781052,
+      "name": "Summoned Skull",
+      "rating": 10,
+      "reviewText": "One of Yugi's iconic boss monsters and a staple in the early meta. An unrestricted 2500 ATK as a one tribute monster is actually maximal, and was the go-to high-power beatstick for years. It also had synergy with Fiend support cards and even got its own spinoffs."
+    },
+    {
+      "id": 40453765,
+      "name": "Swamp Battleguard",
+      "rating": 1,
+      "reviewText": "Like its Lava brother, complete dogshit."
+    },
+    {
+      "id": 98495314,
+      "name": "Sword of Deep-Seated",
+      "rating": 1,
+      "reviewText": "The forcing to be back on top of the deck is ridiculous and can actually harm you so this gets a 1."
+    },
+    {
+      "id": 28725004,
+      "name": "Tainted Wisdom",
+      "rating": 1,
+      "reviewText": "Shuffling my deck does nothing positive for me. Unless there's a super niche effect liek Parasite Paracide."
+    },
+    {
+      "id": 71107816,
+      "name": "The Bistro Butcher",
+      "rating": 1,
+      "reviewText": "Absolutely the fuck not lol"
+    },
+    {
+      "id": 41142615,
+      "name": "The Cheerful Coffin",
+      "rating": 3,
+      "reviewText": "I guess this could be useful for decks that want monsters in the Graveyard, but there's just better alternatives (Foolish Burial). It did see play though."
+    },
+    {
+      "id": 84926738,
+      "name": "The Immortal of Thunder",
+      "rating": 1,
+      "reviewText": "Very solid LP gain but even without the drawback LP gain just isn't good. There's better ways for mass LP gain than the risk of net -2000."
+    },
+    {
+      "id": 25109950,
+      "name": "The Little Swordsman of Aile",
+      "rating": 1,
+      "reviewText": "Not remotely close to enough ATK, and its TEMPORARY lol. Fuck off my screen."
+    },
+    {
+      "id": 51275027,
+      "name": "The Unhappy Maiden",
+      "rating": 3,
+      "reviewText": "One of the earliest stall monsters. This could buy one turn of survival basically. Even back then though this didn't see much play, and stall decks just used straightforward high-DEF monsters like Giant Soldier of Stone."
+    },
+    {
+      "id": 41462083,
+      "name": "Thousand Dragon",
+      "rating": 5,
+      "reviewText": "Famously used by Joey WHeeler in the anime, but extremely underwhelming as a Fusion. Unsurprisingly, never saw competitive play."
+    },
+    {
+      "id": 31786629,
+      "name": "Thunder Dragon",
+      "rating": 9,
+      "reviewText": "One of those monsters that surprisingly aged well over time. Terrible stats but great effect to generate hand advantage, used for thinning out deck for Exodia or just generic hand fodder for discard costs. Later on it got its own archetype which actually did see competitive play."
+    },
+    {
+      "id": 71625222,
+      "name": "Time Wizard",
+      "rating": 8,
+      "reviewText": "An iconic gambling monster used by Joey. Massive game-changing potential but had extra damage effect if u lost the coin flip. Never really saw serious competitive play because alternatives like Raigeki/Dark Hole were just better."
+    },
+    {
+      "id": 69572024,
+      "name": "Tongyo",
+      "rating": 1,
+      "reviewText": "Freaky ahh fish"
+    },
+    {
+      "id": 46918794,
+      "name": "Tremendous Fire",
+      "rating": 4,
+      "reviewText": "Decent i guess, if u need to finish off that last 1000 LP and u had enough LP of your own."
+    },
+    {
+      "id": 78780140,
+      "name": "Trent",
+      "rating": 1,
+      "reviewText": "Trent Williams"
+    },
+    {
+      "id": 79759861,
+      "name": "Tribute to the Doomed",
+      "rating": 5,
+      "reviewText": "Gave some flexibility in monster removal by letting you choose the monster to be destroyed, but that discard cost could actually be beneficial (Dark World, Fabled). Saw some competitive use but not much."
+    },
+    {
+      "id": 54752875,
+      "name": "Twin-Headed Thunder Dragon",
+      "rating": 4,
+      "reviewText": "Actually very solid for a fusion monster and could easily get the 2 pieces with Thunder Dragon's effect. I like it."
+    },
+    {
+      "id": 2483611,
+      "name": "Water Omotics",
+      "rating": 1,
+      "reviewText": "Uncensored titty is crazy. Where's her nipples?"
+    },
+    {
+      "id": 15150365,
+      "name": "White Magical Hat",
+      "rating": 4,
+      "reviewText": "Like Masked Sorceror, GREAT effect but bad backing stats."
+    },
+    {
+      "id": 87796900,
+      "name": "Winged Dragon, Guardian of the Fortress #1",
+      "rating": 1,
+      "reviewText": "Such a long name for midness"
+    },
+    {
+      "id": 78010363,
+      "name": "Witch of the Black Forest",
+      "rating": 10,
+      "reviewText": "Behold, in its original un-nerfed un-erratad form, the most powerful searcher in Yugioh history. 1500 DEF allowed FAR more search range than even Sangan. Like Sangan it was banned for many many years until it got sadly erratad."
+    },
+    {
+      "id": 80741828,
+      "name": "Witch's Apprentice",
+      "rating": 1,
+      "reviewText": "Same as others"
+    },
+    {
+      "id": 29380133,
+      "name": "Yado Karu",
+      "rating": 1,
+      "reviewText": "The fuck is even the point of doing that? In any order I desire? This card is just weird lol. Bye Mr. Krabs."
+    }
   ]
 }
-

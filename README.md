@@ -90,6 +90,16 @@ Deep Links
 ----------
 - Navigate directly to `/card/:id` (e.g., `/card/89631139`).
 - Add `?pack=<Pack Name>` to constrain Previous/Next to that pack (e.g., `/card/89631139?pack=Legend%20of%20Blue%20Eyes%20White%20Dragon`).
+ - Next/Previous on the card page update the URL.
+
+Data Utilities
+--------------
+- Fill a pack with missing cards from YGOPRODeck and write them to `src/data/<Folder>/cards.json`:
+  - `npm run fill:pack -- --folder=LegendBEWD --pack-name="Legend of Blue Eyes White Dragon"`
+  - `npm run fill:pack -- --folder=MetalRaiders --pack-name="Metal Raiders" --default-rating=0 --review-text="TBD"`
+  - If `cards.json` already exists, you can omit `--pack-name` and it will use the `pack` in the file.
+- Update missing or placeholder IDs by card name across all packs:
+  - `npm run update:ids` (options: `--dry-run`, `--all`, `--min-digits=6`, `--pack=<Folder>`)
 
 How It Works
 ------------
